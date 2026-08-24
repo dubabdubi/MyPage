@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 48dbf4d6dd3ad8d42b4118c2ff0c4f3e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shark: {instanceID: 0}
+  - jennie: {instanceID: 0}
+  - jennieSpawnAnchor: {instanceID: 0}
+  - sharkSpawnAnchor: {instanceID: 0}
+  - VREngineStartObj: {instanceID: 0}
+  - damangedEngine: {instanceID: 0}
+  - fixedEngine: {instanceID: 0}
+  - electricEffect: {instanceID: 0}
+  - VRPortalOpenAnimator: {instanceID: 0}
+  - currentWeapon: {fileID: 4944237787991372393, guid: f050f309f1630d44c8b3679db91e8ac5,
+      type: 3}
+  - newWeaponPF: {fileID: 919132149155446097, guid: 09eded8fef2a51c478988eeab3a06bc0,
+      type: 3}
+  - bgmAudioSource: {instanceID: 0}
+  - phase2BGM: {instanceID: 0}
+  - phase2SFX: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
