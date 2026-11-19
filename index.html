@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>조서희 포트폴리오</title>
+  <meta name="description" content="조서희 — 게임 개발, 데이터 분석, 서비스 기획 포트폴리오">
+  <link rel="icon" href="assets/img/student_art.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Silkscreen&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // 첫 화면이 깜빡이지 않도록 저장된 테마를 먼저 적용
+    try {
+      var saved = localStorage.getItem("theme");
+      if (saved) document.documentElement.dataset.theme = saved;
+    } catch (e) {}
+    document.documentElement.classList.add("js");
+  </script>
+</head>
+<body>
+
+<header class="topbar">
+  <nav class="topbar__inner" aria-label="주요 메뉴">
+    <a class="topbar__logo" href="#top">SEOHEE<span>.CHO</span></a>
+    <ul class="topbar__links">
+      <li><a href="#game">게임</a></li>
+      <li><a href="#data">데이터</a></li>
+      <li><a href="#product">기획</a></li>
+      <li><a href="#history">이력</a></li>
+    </ul>
+    <button class="theme-toggle" type="button" aria-label="다크 모드 전환">
+      <span class="theme-toggle__icon" aria-hidden="true"></span>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- 소개 -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">PORTFOLIO</p>
+        <h1 class="hero__name">조서희</h1>
+        <p class="hero__role">게임 개발 · 데이터 분석 · 서비스 기획</p>
+        <p class="hero__meta">
+          충남대학교 컴퓨터융합학부
+          <a href="https://github.com/dubabdubi" target="_blank" rel="noopener">github.com/dubabdubi ↗</a>
+        </p>
+        <dl class="stats">
+          <div class="stats__item"><dt>게임 개발</dt><dd><span data-count="3">3</span>편</dd></div>
+          <div class="stats__item"><dt>대회·프로젝트</dt><dd><span data-count="22">22</span>건</dd></div>
+          <div class="stats__item"><dt>수상</dt><dd><span data-count="5">5</span>회</dd></div>
+        </dl>
+      </div>
+
+      <div class="stage" aria-label="직접 그린 게임 몬스터 스프라이트">
+        <span class="sprite sprite--d" role="img" aria-label="D학점 몬스터"></span>
+        <span class="sprite sprite--f" role="img" aria-label="F학점 몬스터"></span>
+        <span class="sprite sprite--ghost" role="img" aria-label="유령 몬스터"></span>
+        <p class="stage__caption">대학생 졸업시키기 · 직접 그린 몬스터</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 게임 개발 -->
+  <section class="section" id="game">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow">01 · GAME</p>
+        <h2>게임 개발</h2>
+      </header>
+
+      <article class="project reveal">
+        <header class="project__head">
+          <h3>대학생 졸업시키기</h3>
+          <ul class="tags">
+            <li class="tag tag--award">동계 학습동아리 우수상</li>
+            <li class="tag">Unity 2D</li>
+            <li class="tag">C#</li>
+            <li class="tag">Aseprite</li>
+          </ul>
+        </header>
+
+        <dl class="facts">
+          <div><dt>장르</dt><dd>뱀서라이크 생존 액션</dd></div>
+          <div><dt>기간 · 팀</dt><dd>2025.12 ~ 2026.01 · 5명</dd></div>
+          <div><dt>담당</dt><dd>아이템 시스템 구현, 회의 기록, 최종 보고서</dd></div>
+        </dl>
+
+        <div class="split">
+          <div class="prose">
+            <p>신입생이 과제·시험 몬스터를 버티며 8학기를 마치는 게임입니다. 체력 하나 대신 <strong>학점 · 성실도 · 체력</strong> 세 게이지를 두고, 하나라도 0이 되면 게임 오버입니다.</p>
+            <ul class="list">
+              <li>학업·유흥·체력 계열 몬스터가 서로 다른 게이지를 깎음</li>
+              <li>단과대 캐릭터 3종, 아이템 7종, 몬스터 8종</li>
+              <li>2분마다 페이즈 전환, HUD에 레벨 대신 '학년' 표시</li>
+              <li>캐릭터·몬스터 픽셀 에셋 전부 직접 제작</li>
+            </ul>
+          </div>
+          <div class="gallery">
+            <button class="shot" type="button" data-lightbox>
+              <img src="assets/img/grad_play.jpg" alt="플레이 화면. 학점·성실·체력 게이지와 몬스터들" loading="lazy">
+              <span class="shot__caption">플레이 화면</span>
+            </button>
+            <button class="shot" type="button" data-lightbox>
+              <img src="assets/img/grad_levelup.jpg" alt="레벨업 아이템 선택 창" loading="lazy">
+              <span class="shot__caption">레벨업 아이템 선택</span>
+            </button>
+          </div>
+        </div>
+
+        <figure class="chart">
+          <figcaption class="chart__title">레벨업 시점 · 8분 플레이</figcaption>
+          <div class="timeline-chart">
+            <div class="timeline-chart__row">
+              <span class="timeline-chart__label">변경 전</span>
+              <div class="timeline-chart__track">
+                <i class="tick tick--old" style="--t:0.5"></i>
+                <i class="tick tick--old" style="--t:1.17"></i>
+                <i class="tick tick--old" style="--t:2"></i>
+                <i class="tick tick--old" style="--t:3"></i>
+                <i class="tick tick--old" style="--t:4.17"></i>
+                <i class="tick tick--old" style="--t:5.5"></i>
+                <i class="tick tick--old" style="--t:7"></i>
+                <span class="gap-note" style="--from:5.5; --to:7">후반 공백</span>
+              </div>
+            </div>
+            <div class="timeline-chart__row">
+              <span class="timeline-chart__label">변경 후</span>
+              <div class="timeline-chart__track">
+                <i class="tick" style="--t:1"></i>
+                <i class="tick" style="--t:2"></i>
+                <i class="tick" style="--t:3"></i>
+                <i class="tick" style="--t:4"></i>
+                <i class="tick" style="--t:5"></i>
+                <i class="tick" style="--t:6"></i>
+                <i class="tick" style="--t:7"></i>
+                <i class="tick" style="--t:8"></i>
+              </div>
+            </div>
+            <div class="timeline-chart__row timeline-chart__row--axis" aria-hidden="true">
+              <span></span>
+              <div class="timeline-chart__scale">
+                <span style="--t:0">0</span>
+                <span style="--t:2">2</span>
+                <span style="--t:4">4</span>
+                <span style="--t:6">6</span>
+                <span style="--t:8">8분</span>
+              </div>
+            </div>
+          </div>
+          <p class="chart__note">테스트 플레이에서 "후반에 레벨업이 너무 드물다"는 평가가 나와 1분 간격으로 바꿨습니다.</p>
+        </figure>
+
+        <div class="table-scroll">
+          <table class="patch">
+            <caption>개선 기록</caption>
+            <thead>
+              <tr><th scope="col">항목</th><th scope="col">문제</th><th scope="col">변경</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">맵</th><td>무한맵에서는 계속 도망만 다녀도 버틸 수 있음</td><td><s>무한맵</s> → 고정 타일맵</td></tr>
+              <tr><th scope="row">클리어 시간</th><td>'8학기를 버틴다'는 설정과 플레이 시간을 맞춤</td><td><s>4분</s> → 8분, 2분마다 학년이 오르는 4페이즈</td></tr>
+              <tr><th scope="row">레벨업 기준</th><td>시간이 갈수록 간격이 벌어져 후반에 레벨업이 드묾</td><td><s>킬 수</s> → <s>점점 벌어지는 시간</s> → 1분 간격</td></tr>
+              <tr><th scope="row">아이템 선택</th><td>레벨업 창 조작 개선</td><td>한 창에서 여러 개 선택, 연타 방지(HashSet)</td></tr>
+              <tr><th scope="row">넉백</th><td>넉백이 의도대로 동작하지 않음</td><td>질량 조정 (몬스터 13 : 플레이어 10)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <header class="project__head">
+          <h3>빙고! <small>BUDDY BINGO</small></h3>
+          <ul class="tags">
+            <li class="tag">NHN GAME AI HACKATHON 2026</li>
+            <li class="tag">React</li>
+            <li class="tag">TypeScript</li>
+            <li class="tag">vitest</li>
+          </ul>
+        </header>
+
+        <dl class="facts">
+          <div><dt>장르</dt><dd>웹 심리 호러 · 단어 퍼즐</dd></div>
+          <div><dt>기간 · 팀</dt><dd>2026.08 · 3명</dd></div>
+          <div><dt>담당</dt><dd>라운드별 단어 데이터, 사운드·이미지 에셋, 테스트 플레이</dd></div>
+        </dl>
+
+        <div class="split split--reverse">
+          <div class="prose">
+            <p>90년대 영어 학습 프로그램처럼 시작해서 라운드가 오를수록 화면이 무너지는 게임입니다. 토끼 '버디'의 뜻풀이에 맞는 단어를 눌러 5×5 판에서 3줄을 맞추면 통과합니다.</p>
+            <ol class="rounds">
+              <li><b>R1</b> 제한시간 없음, 실패해도 한 번 더</li>
+              <li><b>R2</b> 제한시간 추가, 실패하면 하트를 채워 주고 R3로</li>
+              <li><b>R3</b> escape · run · hide 같은 도망 단어를 누르면 정답이어도 하트 감소</li>
+            </ol>
+            <p class="muted">단어 75개를 라운드당 25개씩, 일상어에서 기괴한 설명으로 수위가 오르게 배치했습니다. 배분·중복 규칙은 테스트 코드로 확인합니다.</p>
+            <a class="link-button" href="https://mujidog.github.io/NAN_buddy-bingo/" target="_blank" rel="noopener">플레이하기 ↗</a>
+          </div>
+          <div class="gallery">
+            <button class="shot" type="button" data-lightbox>
+              <img src="assets/img/bingo_r1.jpg" alt="빙고 1라운드 화면" loading="lazy">
+              <span class="shot__caption">Round 1</span>
+            </button>
+            <button class="shot" type="button" data-lightbox>
+              <img src="assets/img/bingo_r3.jpg" alt="빙고 3라운드 화면. DIE로 바뀐 칸들" loading="lazy">
+              <span class="shot__caption">Round 3</span>
+            </button>
+          </div>
+        </div>
+
+        <figure class="chart">
+          <figcaption class="chart__title">공포도(dread) 0 ~ 1 · 라운드별 범위</figcaption>
+          <div class="range-chart">
+            <div class="range-chart__row"><span>R1</span><div class="range-chart__track"><i class="range range--calm" style="--from:0; --to:0.22"></i></div><span class="num">0 – 0.22</span></div>
+            <div class="range-chart__row"><span>R2</span><div class="range-chart__track"><i class="range" style="--from:0.26; --to:0.60"></i></div><span class="num">0.26 – 0.60</span></div>
+            <div class="range-chart__row"><span>R3</span><div class="range-chart__track"><i class="range range--hot" style="--from:0.78; --to:1"></i></div><span class="num">0.78 – 1.00</span></div>
+          </div>
+          <p class="chart__note">공포도 값 하나로 배경 채도, 글리치, 글자 가독성, 캐릭터 표정을 함께 움직입니다. 진행도 = 경과시간/150초 × 0.55 + 정답 수/11 × 0.45, 하트를 잃을 때마다 +0.02.</p>
+        </figure>
+      </article>
+
+      <article class="project reveal">
+        <header class="project__head">
+          <h3>XR 개발자 이해 게임</h3>
+          <ul class="tags">
+            <li class="tag">AI·XR 서비스 개발자 경진대회</li>
+            <li class="tag">Unity</li>
+            <li class="tag">Photon</li>
+            <li class="tag">Meta Quest</li>
+          </ul>
+        </header>
+        <dl class="facts">
+          <div><dt>플랫폼</dt><dd>Meta Quest 혼합현실, 같은 공간 멀티플레이</dd></div>
+          <div><dt>기간</dt><dd>2026.07 ~ 08</dd></div>
+          <div><dt>담당</dt><dd>2페이즈 무기 변환과 사운드</dd></div>
+        </dl>
+        <ol class="flow">
+          <li><b>Phase 1</b><span>디펜스</span></li>
+          <li><b>엔진 가동</b><span>페이즈 전환</span></li>
+          <li><b>Phase 2</b><span>무기 변환, 데이터 파편 흡수</span></li>
+          <li><b>엔딩</b><span>파편 최다 수집자 MVP</span></li>
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <!-- 데이터 분석 -->
+  <section class="section section--tint" id="data">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow">02 · DATA</p>
+        <h2>데이터 분석</h2>
+      </header>
+
+      <article class="project reveal">
+        <header class="project__head">
+          <h3>119 신고 음성 화자 분류</h3>
+          <ul class="tags">
+            <li class="tag tag--award">DCC 예선팀 선발</li>
+            <li class="tag">PyTorch</li>
+            <li class="tag">Wav2Vec2</li>
+            <li class="tag">LightGBM</li>
+          </ul>
+        </header>
+        <dl class="facts">
+          <div><dt>문제</dt><dd>발화 한 조각만 듣고 신고자 / 119대원 구분</dd></div>
+          <div><dt>데이터</dt><dd>2.9만 통화 · 82만 발화</dd></div>
+          <div><dt>담당</dt><dd>미션 2 모델링·검증</dd></div>
+        </dl>
+
+        <figure class="chart">
+          <figcaption class="chart__title">Validation 정확도 (%) · 축은 80부터</figcaption>
+          <div class="bar-chart" style="--min:80; --max:95">
+            <div class="bar-chart__row"><span>MFCC + RandomForest</span><div class="bar-chart__track"><i class="bar" style="--v:82.55"></i></div><span class="num">82.55</span></div>
+            <div class="bar-chart__row"><span>LightGBM · 특징 384개</span><div class="bar-chart__track"><i class="bar" style="--v:87.49"></i></div><span class="num">87.49</span></div>
+            <div class="bar-chart__row"><span>Mel + ResNet18</span><div class="bar-chart__track"><i class="bar" style="--v:89.58"></i></div><span class="num">89.58</span></div>
+            <div class="bar-chart__row"><span>학습 데이터 82만 발화</span><div class="bar-chart__track"><i class="bar" style="--v:91.71"></i></div><span class="num">91.71</span></div>
+            <div class="bar-chart__row"><span>Wav2Vec2 (가공 표)</span><div class="bar-chart__track"><i class="bar" style="--v:92.22"></i></div><span class="num">92.22</span></div>
+            <div class="bar-chart__row bar-chart__row--hot"><span>원본 기준 재평가</span><div class="bar-chart__track"><i class="bar" style="--v:90.91"></i></div><span class="num">90.91</span></div>
+            <div class="bar-chart__row bar-chart__row--best"><span>원본 구간으로 재학습</span><div class="bar-chart__track"><i class="bar" style="--v:93.06"></i></div><span class="num">93.06</span></div>
+          </div>
+        </figure>
+
+        <div class="callout">
+          <p><strong>원본 기준 재평가</strong> 학습·평가에 쓰던 표가 겹치는 구간을 잘라 낸 가공본이라 92.22%는 쉬운 부분만 푼 점수였습니다. 채점 기준인 원본으로 다시 재니 90.91%, 원본 구간으로 다시 학습해 93.06%를 얻었습니다.</p>
+        </div>
+        <ul class="list">
+          <li>같은 통화가 학습·평가에 섞여 97%가 나온 분할 방식, 규정상 쓸 수 없는 앞뒤 발화 정보는 점수가 높아도 제외</li>
+          <li>오답의 79%가 119대원 발화(대원 88.6% · 신고자 97.2%), 63%가 0.5~1.5초 짧은 응답</li>
+        </ul>
+      </article>
+
+      <div class="cards">
+        <article class="card reveal">
+          <p class="eyebrow">ADMIN AI CHALLENGE 2026</p>
+          <h3>단백질 구조 20분류</h3>
+          <p>서열과 좌표만으로 20종 구조를 맞히는 대회. 회전·이동에 상관없는 구조 특징을 249개에서 582개까지 설계하고 트리 모델 앙상블을 비교했습니다.</p>
+          <dl class="kv">
+            <dt>지표</dt><dd>Macro F1</dd>
+            <dt>발견</dt><dd>검증 +0.047일 때 제출 점수는 +0.01, 검증셋 하나에 과적합</dd>
+            <dt>대응</dt><dd>그룹 4겹 교차검증으로 모델 선택 기준 변경</dd>
+          </dl>
+        </article>
+        <article class="card reveal">
+          <p class="eyebrow">앵커×COSS 융합 해커톤</p>
+          <h3>소방차 골목 진입 판정</h3>
+          <p>CCTV 화면으로 골목의 남은 폭을 재서 소방차 9종의 통과 여부를 출동 전에 판정합니다. 픽셀을 실제 미터로 바꾸는 환산 모듈을 맡았습니다.</p>
+          <dl class="kv">
+            <dt>정확도</dt><dd>폭 환산 오차 37.3cm → 1.8cm</dd>
+            <dt>핵심 지표</dt><dd>위험 통과 판정 4,275건 중 0건</dd>
+            <dt>대가</dt><dd>보류 10.5%, 경형펌프차 27% 불필요 우회</dd>
+          </dl>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 서비스 기획 -->
+  <section class="section" id="product">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow">03 · PRODUCT</p>
+        <h2>서비스 기획</h2>
+      </header>
+      <div class="cards">
+        <article class="card reveal">
+          <p class="eyebrow">SOGRA 장려상 · 관광데이터 공모전</p>
+          <h3>빵칼</h3>
+          <p>먹은 빵의 칼로리를 걸어서 빼는 시간으로 바꿔 보여주고 산책 코스를 추천합니다. 빵집 3곳 메뉴 124개를 직접 조사해 DB로 만들었습니다.</p>
+          <dl class="kv">
+            <dt>추천 점수</dt><dd>칼로리 40 · 거리 30 · 평점 20 · 영업 중 10</dd>
+            <dt>KPI</dt><dd>DAU 1만 / MAU 5만, 재방문 60%, 유료 전환 5%</dd>
+            <dt>BM</dt><dd>구독 월 4,900원, 제휴 수수료 5~10%</dd>
+          </dl>
+        </article>
+        <article class="card reveal">
+          <p class="eyebrow">창업아이디어 경진대회 장려상</p>
+          <h3>TeamUp</h3>
+          <p>팀원 시간표로 회의 시간을 자동 추천하는 대학생 협업툴. 시장 조사와 수익 추정을 맡았습니다.</p>
+          <dl class="kv">
+            <dt>시장</dt><dd>유료 전환 가능 13.8만 명 중 5~10%</dd>
+            <dt>요금</dt><dd>개인 월 2,900원 · 팀 7,900원</dd>
+            <dt>매출</dt><dd>연 3,240만 ~ 2.2억 원 추정</dd>
+          </dl>
+        </article>
+        <article class="card reveal">
+          <p class="eyebrow">AI 해커톤 서머캠프 대상</p>
+          <h3>길든타임 소방 내비게이션</h3>
+          <p>소방서 두 곳 인터뷰에서 "출동 전에 골목이 막혔는지 알 방법이 없다"는 문제를 찾았습니다. 도로 폭·제보 사진·민원 데이터가 겹치는 곳을 고립 위험 구역으로 표시하고 우회시킵니다.</p>
+        </article>
+        <article class="card reveal">
+          <p class="eyebrow">MABC 결선 진출</p>
+          <h3>세모눈</h3>
+          <p>반대자를 반드시 포함한 AI 검토자 3~4명이 5개 관점, 3항목 × 5점 루브릭으로 아이디어를 채점하고 진행 · 보류 · 폐기를 판정합니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 활동 이력 -->
+  <section class="section section--tint" id="history">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow">04 · HISTORY</p>
+        <h2>활동 이력</h2>
+      </header>
+
+      <div class="filters" role="group" aria-label="이력 필터">
+        <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">전체</button>
+        <button class="filter" type="button" data-filter="award" aria-pressed="false">수상·선정</button>
+        <button class="filter" type="button" data-filter="game" aria-pressed="false">게임</button>
+        <button class="filter" type="button" data-filter="data" aria-pressed="false">데이터·AI</button>
+      </div>
+
+      <ol class="history">
+        <li data-type="award"><time>2025</time><span>Motion 해커톤 · 원하는 장르의 음악 생성</span><em class="badge badge--win">장려상</em></li>
+        <li data-type="award"><time>2025</time><span>SOGRA · 빵칼</span><em class="badge badge--win">장려상</em></li>
+        <li data-type="award"><time>2025</time><span>추계 창업아이디어 경진대회 · TeamUp</span><em class="badge badge--win">장려상</em></li>
+        <li data-type=""><time>2025</time><span>어드벤처디자인 · 사용자 맞춤형 냉장고 도우미</span><em class="badge">수업</em></li>
+        <li data-type="award game"><time>2025.12</time><span>CNU 동계 학습동아리 · 대학생 졸업시키기</span><em class="badge badge--win">우수상</em></li>
+        <li data-type="award"><time>2026.04</time><span>CNU 1학기 학습동아리 · 전공 튜터링 스터디</span><em class="badge">선정</em></li>
+        <li data-type=""><time>2026.1학기</time><span>기초프로젝트랩 · 북버디 (스포일러 방지 문학 큐레이터)</span><em class="badge">수업</em></li>
+        <li data-type="data"><time>2026</time><span>상상그라운드 · AI 음향 향상 보청기 앱</span><em class="badge">참가</em></li>
+        <li data-type="award data"><time>2026.07</time><span>AI 해커톤 서머캠프 · 길든타임 소방 내비게이션</span><em class="badge badge--win">대상</em></li>
+        <li data-type=""><time>2026 여름</time><span>충남대 여름방학 알고리즘 캠프 (중급반)</span><em class="badge">수료</em></li>
+        <li data-type="data"><time>2026 여름</time><span>CNU 하계 기업 탐색 인턴십 · 매매 자동화</span><em class="badge">참여</em></li>
+        <li data-type="game"><time>2026.08</time><span>AI·XR 서비스 개발자 경진대회 · XR 개발자 이해 게임</span><em class="badge">출품</em></li>
+        <li data-type="game"><time>2026.08</time><span>NHN GAME AI HACKATHON · 빙고!</span><em class="badge">참가</em></li>
+        <li data-type="data"><time>2026</time><span>관광데이터 활용 공모전 · 빵칼 디벨롭</span><em class="badge">출품</em></li>
+        <li data-type="data"><time>2026</time><span>LG Aimers 9기</span><em class="badge">수료</em></li>
+        <li data-type="data"><time>2026.09</time><span>KT AI 지역문제 해결 캠프 · 노후 공장 화재 감지 (팀장)</span><em class="badge">참가</em></li>
+        <li data-type="award data"><time>2026.09</time><span>MABC · 세모눈</span><em class="badge badge--win">결선 진출</em></li>
+        <li data-type="award data"><time>2026.10</time><span>데이터·AI 크리에이터 캠프 · 119 신고 음성 AI</span><em class="badge badge--win">예선팀 선발</em></li>
+        <li data-type="data"><time>2026.10</time><span>고용24 해커톤 · 징검다리 AI</span><em class="badge">참가</em></li>
+        <li data-type="data"><time>2026.11</time><span>앵커×COSS 융합 해커톤 · 소방차 골목 진입 판정</span><em class="badge">본선 발표</em></li>
+        <li data-type=""><time>2026.11</time><span>한국창업학회 추계학술논문대회 · 개인 보안 서비스 지불 의사 연구</span><em class="badge">논문</em></li>
+        <li data-type="award"><time>2026.11</time><span>CRC 3기 · 추천 알고리즘과 음식 중독 (리더)</span><em class="badge">선정</em></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 도구 -->
+  <section class="section" id="skills">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow">05 · SKILLS</p>
+        <h2>도구</h2>
+      </header>
+      <div class="skills reveal">
+        <div><h3>Game</h3><p>Unity (2D · XR), C#, Photon, Aseprite, React · TypeScript</p></div>
+        <div><h3>Data</h3><p>Python, pandas, scikit-learn, LightGBM, PyTorch</p></div>
+        <div><h3>Docs · Collab</h3><p>기획서 · 발표자료, Figma, Notion, GitHub</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© 조서희</span>
+    <a href="https://github.com/dubabdubi" target="_blank" rel="noopener">github.com/dubabdubi</a>
+  </div>
+</footer>
+
+<dialog class="lightbox" aria-label="이미지 크게 보기">
+  <img class="lightbox__img" src="" alt="">
+  <button class="lightbox__close" type="button" aria-label="닫기">×</button>
+</dialog>
+
+<script src="js/main.js"></script>
+</body>
+</html>
